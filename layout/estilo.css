@@ -1,0 +1,171 @@
+*{
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    color: #373a3c;
+    font-weight: 400;
+    overflow: auto;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.corpo{
+    width: 100%;
+    background: #1dd1a1;
+    height: 100vh;
+}
+
+
+/*topo e menu*/
+
+header{
+    background-color: #218c74;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 5vh;
+  }
+  
+.menu{
+    list-style: none;
+    float: left;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    height: 90%;
+}
+
+.menu a{
+    color: #fff;
+    display: flex;
+    width: 100%;
+    height: 99%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 100%;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+.logo img{
+    width: 50%;
+}
+
+main{
+    width: 100%;
+    height: 95vh;   
+}
+
+.btn-inicial{
+    width: 90%;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    text-align: center;
+}
+
+.btn-inicial a{
+    display: block;
+    padding: 1em 5em 1em 5em;
+    text-align: center;
+    background: #e74c3c;
+    color: #fff;
+    margin-top:4em;
+    border-radius: 5px;
+    border-right: 2px solid #c0392b;
+    border-bottom: 2px solid #c0392b;
+}
+
+.formulario{
+    width: 100%;
+    height: 60vh;
+}
+
+.formulario label{
+    width: 100%;
+    display: block;
+    color: #fff;
+}
+
+#bt_traduz{
+    display: block;
+    padding: 1em 5em 1em 5em;
+    text-align: center;
+    background: #e74c3c;
+    color: #fff;
+    margin-top:2em;
+    border-radius: 5px;
+    border-right: 2px solid #c0392b;
+    border-bottom: 2px solid #c0392b;
+}
+
+footer{
+    width: 100%;
+    padding-top: 3%;
+    text-align: center;
+    color: #218c74;
+    border-top: 1px solid #218c74;
+    font-size: 0.6em;
+}
+
+
+
+@media screen and (min-width: 575px){
+    .btn-inicial{
+        width: 60%;
+    }
+    .logo{
+        width: 50%;
+        padding-top: 10%;
+        padding-bottom: 7%;
+    }
+}
+
+#noresult{
+    display: block;
+    width: 90%;
+    border: 1px solid #e74c3c;
+    text-align: center;
+    padding: 0.2em;
+    color: #e74c3c;
+}
+
+#wordtarget{
+    width: 100%;
+}
+
+.sobre-txt{
+    width: 95%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-color: #05bd8c;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+.sobre-txt p{
+    text-align: justify;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #fff;
+}

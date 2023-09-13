@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/motor.js" ></script>
+    <link rel="stylesheet" href="layout/autocomplete.css" lang="css">
+    <link rel="stylesheet" href="layout/estilo.css">
+</head>
+<body onload="carregaDict('can2port')" >
+    <div class="corpo">
+        <header>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#">Dicionário</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="logo">
+                <img src="img/logo_pt_canela.png">
+            </div>
+            <span id="noresult" style="visibility: hidden;" >Nenhum resultado encontrado.</span>
+            <form class="formulario">
+                <div class="autocomplete campo">
+                    <label for="wordkey">Canela: </label><br>
+                    <input type="text" id="wordkey" name="wordkey">
+                </div>
+                <input type="button" value="Traduzir" id="bt_traduz" onclick="can2port()" ><br><br><br>
+                <div class="campo">
+                    <label for="wordtarget">Português: </label><br>
+                    <textarea id="wordtarget" rows="5" readonly ></textarea>    
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; Mehin Kupen - Tradutor da Lingua Rankokamekra Para a Lingua Portuguesa</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script>
+    autocomplete(document.getElementById("wordkey"));
+</script>
